@@ -29,7 +29,7 @@ for (; n <= 20; n++) {
     }
 }
 
-// Attempt 2: 
+// Attempt 2: Code only increments even numbers
 let x = 4;
 while (x <= 20) {
     x++;
@@ -40,18 +40,14 @@ while (x <= 20) {
     console.log(x)
 }
 
-// Attempt 3:
-let j = 7
-
-while (j % 2 == 0) {
-    j++;
-
+// Attempt 3: 
+let j = 5
+for (j <= 20; ; j++) {
     if (j % 2 != 0) {
+        console.log(j);
         break;
-    } console.log(j)
+    }
 }
-
-
 
 
 
@@ -59,7 +55,21 @@ while (j % 2 == 0) {
 ///// Part 3: Feeling Loopy
 
 const csvString = `
- ID,Name,Occupation,Age\n42,Bruce KNight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor's Assistant,26`;
+ ID,Name,Occupation,Age\n42,Bruce Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor's Assistant,26`;
 
-let id = ["id", 42, 57, 63, 98];
+let id = ["42","57","63","98"];
+const name = ["Bruce","Bob","Blaine","Bill"];
+const occupation = ["Knight","Fry Cook","Quiz Master","Doctors Assistant"]
+let age = ["41","19","58","26"]
+
+console.log(csvString)
+
+const table = [
+    ["id", 42, 57, 63, 98],
+    ["name", `Bruce`, `Bob`, `Blaine`, `Bill`],
+    ["occupation", `Knight`, `Fry Cook`, `Quiz Master`, `Doctors Assistant`],
+    ["age", 41, 19, 58, 26]
+]
+
+console.log(cell1)
 
