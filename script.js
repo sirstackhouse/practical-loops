@@ -12,63 +12,54 @@ for (let a = 1; a < 101; a++) { //Loop increments to 100
 
 ///// Part 2: Prime Time
 
-//let i = 5
-
-//for (let ; i <= 20; i++) {
-//    if (i % 2 === 0) {
-//        break
-//    }
-//}
-
+// Attempt 1: Able to get prime numbers, can't figure out how to print just the next prime number
 let n = 2
 
 for (; n <= 20; n++) {
     let flag = 0;
 
-    for (let j = 2; j < n; j++){
+    for (let j = 2; j < n; j++) {
         if (n % j === 0) {
             flag = 1;
             break;
         }
     }
-
-    if (flag === 0){
+    if (flag === 0) {
         console.log(n)
     }
 }
 
-let l = 2
-
-for (; l <= 20; l++) {
-    let flag = 0;
-
-    for (let j = 2; j < l; j++){
-        if (n % j === 0) {
-            flag = 0;
-            break;
-        }
-    }
-
-}
-
-let x = 2;
-while (x <= 0) {
-    x *= 2;
+// Attempt 2: 
+let x = 4;
+while (x <= 20) {
     x++;
 
-    if (x % 1 != 0) {
+    if (x % 2 == 0) {
         break;
     }
-   console.log(x)
+    console.log(x)
+}
+
+// Attempt 3:
+let j = 7
+
+while (j % 2 == 0) {
+    j++;
+
+    if (j % 2 != 0) {
+        break;
+    } console.log(j)
 }
 
 
 
 
- ///// Part 3: Feeling Loopy
 
- const csvString = `
+
+///// Part 3: Feeling Loopy
+
+const csvString = `
  ID,Name,Occupation,Age\n42,Bruce KNight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor's Assistant,26`;
 
- let id = ["id",42,57,63,98];
+let id = ["id", 42, 57, 63, 98];
 
